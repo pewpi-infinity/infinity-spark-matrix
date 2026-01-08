@@ -27,6 +27,8 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Note: This workflow uses actions/upload-pages-artifact (specialized for Pages)
+      # For general artifact handling, use actions/upload-artifact@v4 or later
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
